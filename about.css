@@ -1,0 +1,255 @@
+
+/*Responsive mobile first view*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.container{
+    margin-top: 90px;
+}
+
+.project{
+    margin: 60px 0px;
+    padding: var(--sage-padding);
+}
+
+.project-image{
+    display: block;
+    
+}
+
+.project-image img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+   
+}
+
+.project-detail{
+    display: block;
+    height: auto;
+}
+
+.project-detail-title{
+    font-size: var(--title-font-size);
+    font-weight: var(--sage-font-weight);
+    margin: 20px 0px;
+}
+
+.project-detail-info{
+    margin: 30px 0px;
+    width: 100%;
+    line-height: var(--sage-line-height);
+}
+
+.contact-us a{
+    color: #2a2a2a;
+    text-decoration: none;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 35px;
+    border: solid 2px #FF9C00;
+    font-size: 14px;
+}
+
+.contact-us{
+    margin: 60px 0px;
+    text-align: right;
+}
+
+.contact-us a:hover{
+    box-shadow: 0px 30px 50px 10px rgba(255, 156, 0, 0.16);
+    transition: all .3s;
+}
+
+.team{
+    margin: 100px 0px;
+    padding: 0px 40px;
+}
+
+.team-title{
+    font-size: var(--title-font-size);
+    font-weight: var(--sage-font-weight);
+    margin: 35px 0px; 
+}
+
+.team-member{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.team-member-image{
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 156, 0, 0.12);
+    border: none;
+    border-radius: 30% 30%  0 0;
+}
+
+.team-member-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.team-member-name{
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0px 10px 0px;
+}
+
+.team-member-role{
+    text-align: center;
+    color: #707070;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+/*Responsive Desktop view*/
+@media only screen and (min-width: 768px){
+    .project{
+        margin: 150px 0px 0px 0px;
+        padding: 0px 40px;
+    }
+    
+    .project-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0px;
+        flex-direction: row-reverse;
+    }
+    
+    .project-image{
+        flex-basis: 40%;
+    }
+    
+    .project-image img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .project-detail{
+        height: auto;
+        flex-basis: 50%;
+        margin-right: 30px;
+    }
+
+    .project-detail-title{
+        font-size: var(--sage-font-size)
+    }
+
+    .project-detail-info{
+        line-height: 25px;
+        margin: 40px 0px;
+    }
+    
+    .contact-us{
+        text-align: left;
+    }
+
+    .team{
+        margin: 60px 0px;
+        padding: 0px 40px;
+    }
+
+    .team-title{
+        font-size: var(--sage-font-size);
+        padding-left: 80px;  
+    }
+
+    .team-flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-member{
+        margin: 40px 20px;
+    }
+
+    .team-member-role{
+        text-align: center;
+    }
+}
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*Responsive Tablet view*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .project{
+        margin: 140px 0px 0px 0px;
+        padding: 0px 40px;
+    }
+    
+    .project-wrap{
+        display: flex;
+    }
+    
+    .project-image{
+        flex-basis: 70%;
+    }
+
+    .project-detail{
+        height: auto;
+        flex-basis: 100%;
+        padding: 0px 40px;
+        margin: 0;
+    }
+
+    .project-detail-info{
+        line-height: 25px;
+        margin: 35px 0px;
+        font-size: 14px;
+    }
+}
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+
+
+/*Responsive Mobile Navbar view*/
+@media only screen and (max-width: 768px) {
+    
+}
+
+
+
+    

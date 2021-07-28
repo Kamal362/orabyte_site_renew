@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Orabyte Team Site</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/blog-article.css">
+    <link rel="stylesheet" href="static/css/navbar-footer-sagestyles.css">
+{% endblock %}
+
+{% block body %}
+<nav> 
+    <a href="{{ url_for('homepage')}}" class="logo"><img src="static/images/favicon/Orabyte-logo.png" alt="Orabyte logo minimal"></a>
+    <label for="toggle">
+        &#9776;
+    </label>
+    <input type="checkbox" id="toggle">
+    <ul class="menu">
+        <<li><a href="{{ url_for('homepage') }}">Home</a></li>
+        <li><a href="{{ url_for('project') }}">Projects</a></li>
+        <li><a href="{{ url_for('blogArticle') }}">Blog</a></li>           
+    </ul>
+</nav>
+
+<section class="container">
+    <section class="project">
+        <div class="project-wrap">
+            <div class="project-image-wrap">
+                <div class="project-image"><img src="static/images/blog-image.png" alt="mockup"></div> 
+            </div>
+            <div class="project-detail">
+                <div class="project-detail-wrap">
+                    <div class="project-detail-title">
+                        How to overcome Burnout
+                    </div>
+                    <div class="project-tags">Eric Nyarko Sampson</div>
+                    <div class="project-detail-info">This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.
+                        This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.
+                        It’s a cold and dark night, the lights of your laptop screen flicke r as you move from tab 
+                        to tab in your Chrome/Firefox browser,the keys on your keyboard click loudly and it’s been 3 
+                        days since you encountered this error or since you got stuck on this paragraph of your 1500 word 
+                        essay. You’re tired, you feel fed up, maybe this is not the field for you. You should have done 
+                        something else. Your parents were right, 
+
+
+                        you should have been a *__insert a profession parents wish you were, here__*.
+                        Maybe you’re not cut out for this position and…
+                        This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.
+                        It’s a cold and dark night, the lights of your laptop screen flicke r as you move from tab 
+                        to tab in your Chrome/Firefox browser,the keys on your keyboard click loudly and it’s been 3 
+                        days since you encountered this error or since you got stuck on this paragraph of your 1500 word 
+                        essay. You’re tired, you feel fed up, maybe this is not the field for you. You should have done 
+                        something else. Your parents were right, 
+
+
+                        you should have been a *__insert a profession parents wish you were, here__*.
+                        Maybe you’re not cut out for this position and…
+                        This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.
+                        It’s a cold and dark night, the lights of your laptop screen flicke r as you move from tab 
+                        to tab in your Chrome/Firefox browser,the keys on your keyboard click loudly and it’s been 3 
+                        days since you encountered this error or since you got stuck on this paragraph of your 1500 word 
+                        essay. You’re tired, you feel fed up, maybe this is not the field for you. You should have done 
+                        something else. Your parents were right, 
+
+
+                        you should have been a *__insert a profession parents wish you were, here__*.
+                        Maybe you’re not cut out for this position and…
+                    </div>
+                    
+                    <div class="project-detail-info">This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.
+                    </div>
+                    
+                    <div class="project-detail-info">This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.
+                    </div>
+                    
+                    <div class="project-detail-info">This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.
+                        It’s a cold and dark night, the lights of your laptop screen flicke r as you move from tab 
+                        to tab in your Chrome/Firefox browser,the keys on your keyboard click loudly and it’s been 3 
+                        days since you encountered this error or since you got stuck on this paragraph of your 1500 word 
+                        essay. You’re tired, you feel fed up, maybe this is not the field for you. You should have done 
+                        something else. Your parents were right, 
+                        you should have been a *__insert a profession parents wish you were, here__*.
+                        Maybe you’re not cut out for this position and…
+                    </div>
+                    
+                    <div class="project-detail-info">This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.
+                        It’s a cold and dark night, the lights of your laptop screen flicke r as you move from tab 
+                        to tab in your Chrome/Firefox browser,the keys on your keyboard click loudly and it’s been 3 
+                        days since you encountered this error or since you got stuck on this paragraph of your 1500 word 
+                        essay. You’re tired, you feel fed up, maybe this is not the field for you. You should have done 
+                        something else. Your parents were right, 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+</section>
+    
+<footer>
+    <ul class="footer-links">
+        <li>
+        <a href="#">About Us</a></li>
+        <li>
+        <a href="#">Blog</a></li>
+          <li>
+        <a href="#">Contact Us</a></li>
+        <li>
+        <a href="#">Projects</a></li>
+    </ul>  
+    <div class="footer-team-logo">
+        <a href="#"><img src="static/images/favicon/Orabyte-logo-white.png" alt="Orabyte text logo minimal"></a>
+    </div>
+    <ul class="footer-social-media">
+        <li>
+            <a href="#"><img src="static/images/favicon/instagram-icon.png" alt="instagram logo"></a>
+        </li>
+        <li>
+            <a href="#"><img src="static/images/favicon/facebook-icon.png" alt="facebook logo"></a>
+        </li>
+        <li>
+          <a href="#"><img src="static/images/favicon/twitter-icon.png" alt="linkedin logo"></a>
+        </li>
+    </ul>  
+    <div class="footer-copyright">
+        © Orabytegh 2021
+    </div>
+</footer>  
+{% endblock %}

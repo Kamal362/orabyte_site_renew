@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Orabyte Team Site</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/navbar-footer-sagestyles.css">
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <link rel="stylesheet" href="static/css/moving-word.css"/>
+{% endblock %}
+
+
+{% block body %}
+<nav>
+    <a href="{{ url_for('about')}}" class="logo"><img src="static/images/favicon/Orabyte-logo.png" alt="Orabyte logo minimal"/></a>
+    <label for="toggle">
+        &#9776;
+    </label>
+    <input type="checkbox" id="toggle">
+    <ul class="menu">
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('project') }}">Projects</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog</a></li>            
+    </ul>
+</nav> 
+
+<section class="container">
+        <section class="intro">
+            <div class="intro-wrap">
+                <div class="main-title">
+                    <div class="ml3">We are Team Orabyte</div>
+                </div>
+            </div>
+        </section>
+        <section class="goal">
+            <img src="static/images/favicon/cyan.svg" class="cyan-svg" alt="cyan circle shape">
+            <div class="goal-wrap">
+                <div class="goal-title">
+                    We are a Digital Company passionate about Visual Design and Tech Development 
+                </div>
+            </div>
+        </section>    
+        <section class="works">
+            <div class="work-title">What we do</div>
+            <div class="work">
+                <div class="work-tag">
+                    <div class="work-name">Mobile Development</div>
+                    <img src="static/images/favicon/app.svg" class="app-icon" alt="app icon">
+                </div> 
+                <div class="work-detail">Every voter you add to your poll is given a unique voting key. No intruder can participate without a unique key. 
+                </div>
+            </div> 
+            <div class="work">
+                <div class="work-tag">
+                    <div class="work-name">Web Development</div>
+                    <img src="static/images/favicon/web.svg" class="web-icon" alt="web icon">
+                </div> 
+                <div class="work-detail">Every voter you add to your poll is given a unique voting key. No intruder can participate without a unique key. 
+                </div>
+            </div>     
+            <div class="work">
+                <div class="work-tag">
+                    <div class="work-name">Product Design</div>
+                    <img src="static/images/favicon/UI.svg" class="ui-icon" alt="ui icon">
+                </div> 
+                <div class="work-detail">Every voter you add to your poll is given a unique voting key. No intruder can participate without a unique key. 
+                </div>
+            </div>     
+            <div class="work">
+                <div class="work-tag">
+                    <div class="work-name">Graphic & Digital Art</div>
+                    <img src="static/images/favicon/art.svg" class="art-icon" alt="art icon">
+                </div> 
+                <div class="work-detail">Every voter you add to your poll is given a unique voting key. No intruder can participate without a unique key. 
+                </div>
+            </div>     
+    </section>        
+    <section class="skills">
+            <div class="skills-title">
+                Our Skills
+            </div>
+            <div class="skills-image">
+                <img src="static/images/flutter.png" alt="flutter image">
+                <img src="static/images/html.png" alt="html image">
+                <img src="static/images/javascript.png" alt="javascript image">
+                <img src="static/images/react.png" alt="react image">
+                <img src="static/images/python.png" alt="python image">
+                <img src="static/images/adobe-xd.png" alt="adobe-xd image">
+                <img src="static/images/illustrator.png" alt="illustrator image">
+                <img src="static/images/photoshop.png" alt="photoshop image">
+            </div>
+    </section>        
+    <section class="project">
+        <h1 class="project-title">Projects</h1>
+        <div class="project-wrap">
+            <div class="project-image">
+                <img src="static/images/project1.png" alt="mockup">
+            </div>
+
+            <div class="project-detail">
+                <div class="project-detail-wrap">
+                    <div class="project-detail-title">
+                        Explore a few of our handy works
+                    </div>
+                    <div class="project-detail-info">We work on projects of different types. From mobile Apps to websites, rebranding etc. We work in groups based on expertise and      put together good team work to achieve satisfying results.
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <a href="#">Explore Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <h1 class="blog-title">Our Blogs</h1>
+        <div class="blog-wrap">
+            <div class="blog-image">
+                <img src="static/images/blog.png" alt="blog mockup">
+            </div>  
+            <div class="blog-detail">
+                <div class="blog-detail-wrap">
+                    <div class="blog-detail-title">
+                        Discover what our team have to share & top Tech news in Africa
+                    </div>
+                    <div class="blog-detail-info">Get blogs on Innovative research done by team members and random tech experts, and also know the tips and tricks they use in their daily works. 
+                    </div>
+                </div>
+                <div class="blog-us">
+                    <a href="#">Explore Blogs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="agenda">
+        <div class="agenda-wrap">
+            <div class="agenda-title">
+                Simplicity is our ultimate goal
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact-wrap">
+            <div class="contact-title">Contact Us</div>
+            <div class="contact-detail">Let us know what you think?<br/> we will get all your questions answered</div>
+            <form action="/send" method="POST"  class="contact-form">
+                <input type="name" name="nm" placeholder="Enter your name"/>
+                <input type="email" name="em" placeholder="Enter your email"/>
+                <button type="submit">send</button>
+            </form>
+        </div>
+    </section>
+</section>
+
+<footer>
+    <ul class="footer-links">
+        <li>
+        <a href="{{ url_for('about')}}">About Us</a></li>
+        <li>
+        <a href="{{ url_for('blog')}}">Blog</a></li>
+          <li>
+        <a href="{{ url_for('homepage')}}">Contact Us</a></li>
+        <li>
+        <a href="{{ url_for('project')}}">Projects</a></li>
+    </ul>  
+    <div class="footer-team-logo">
+        <a href="#"><img src="static/images/favicon/Orabyte-logo-white.png" alt="Orabyte text logo minimal"></a>
+    </div>
+    <ul class="footer-social-media">
+        <li>
+            <a href="#"><img src="static/images/favicon/instagram-icon.png" alt="instagram logo"></a>
+        </li>
+        <li>
+            <a href="#"><img src="static/images/favicon/facebook-icon.png" alt="facebook logo"></a>
+        </li>
+        <li>
+          <a href="#"><img src="static/images/favicon/twitter-icon.png" alt="linkedin logo"></a>
+        </li>
+    </ul>  
+    <div class="footer-copyright">
+        © Orabytegh 2021
+    </div>
+</footer>  
+
+<!--Moving word javascript links-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="static/js/moving-word.js"></script>
+{% endblock %}
+

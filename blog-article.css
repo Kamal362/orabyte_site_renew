@@ -1,0 +1,155 @@
+/*Responsive mobile first view*/
+*{
+    margin: 0; 
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.container{
+    margin-top: 100px;
+}
+
+.project{
+    margin: 60px 0px;
+}
+
+.project-image{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px; 
+}
+
+.project-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-detail{
+    display: block;
+    padding: 0px 20px;
+    line-height: var(--sage-line-height);
+}
+
+.project-detail-title{
+    font-size: 21px;
+    font-weight: var(--sage-font-weight);
+    margin: 20px 0px;
+}
+
+.project-tags{
+    font-size: 14px;
+    color: #707070;
+}
+
+.project-detail-info{
+    margin: 30px 0px;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+/*Responsive Desktop view*/
+@media only screen and (min-width: 768px){
+    .project{
+        margin: 80px 0px;
+        padding: 0px 40px;
+    }
+    
+    .project-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .project-image-wrap{
+        flex-basis: 70%;
+    }
+
+    .project-image{
+        display: flex;
+        width: 100%;
+        height: 450px;
+        margin-bottom: 40px; 
+    }
+
+    .project-image img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .project-detail{
+        flex-basis: 70%;
+    }
+
+    .project-detail-title{
+        font-size: var(--title-font-size);
+    }
+
+    .project-detail-info{
+        line-height: 25px;
+        margin: 35px 0px;
+    }
+}
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*Responsive Tablet view*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .project-image-wrap{
+        flex-basis: 100%;
+    }
+
+    .project-image{
+        height: 400px;
+    }
+
+    .project-detail{
+        flex-basis: 100%;
+    }
+}
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+
+
+/*Responsive Mobile Navbar view*/
+@media only screen and (max-width: 768px) {
+   
+}
+
+
+
+    

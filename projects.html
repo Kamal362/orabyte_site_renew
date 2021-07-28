@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Orabyte Team Site</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/projects.css">
+    <link rel="stylesheet" href="static/css/navbar-footer-sagestyles.css">
+{% endblock %}
+
+
+{% block body %}
+<nav>
+    <a href="{{ url_for('homepage')}}" class="logo"><img src="static/images/favicon/Orabyte-logo.png" alt="Orabyte logo minimal"></a>
+    <label for="toggle">
+        &#9776;
+    </label>
+    <input type="checkbox" id="toggle">
+    <ul class="menu">
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('project') }}">Projects</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog</a></li>           
+    </ul>
+</nav> 
+
+<section class="project-types">
+    <div class="custom-select">
+        <select name="project-type-list" id="project-type-list" class="project-type-list">
+            <option value="#">Web Development</option>
+            <option value="#">Product Design</option>
+            <option value="#">Mobile Development</option>
+            <option value="#">Graphic and Digital Art</option>
+        </select>
+    </div>
+</section>
+
+<section class="container">
+    <section class="project">
+        <div class="project-wrap">
+            <div class="project-image">
+                <img src="static/images/project1.png" alt="mockup">
+            </div>
+            <div class="project-detail">
+                <div class="project-detail-wrap">
+                    <div class="project-detail-title">
+                        Votitude
+                    </div>
+                    <div class="project-tags">Website, Team Project, Voting site</div>
+                    <div class="project-detail-info">This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.
+                    </div>
+                </div>
+                <div class="project-link">
+                    <span>visit website</span>
+                    <a href="#">www.votitude.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project">
+        <div class="project-wrap">
+            <div class="project-image">
+                <img src="static/images/project2.png" alt="mockup">
+            </div>
+            <div class="project-detail">
+                <div class="project-detail-wrap">
+                    <div class="project-detail-title">
+                        Votitude
+                    </div>
+                    <div class="project-tags">Website, Team Project, Voting site</div>
+                    <div class="project-detail-info">This is a voting website where people from all over the world
+                        can organize elections online. Users can create elections, share 
+                        links to voters, and track results through well calculated 
+                        charts, with high security throughout each process.
+                    </div>
+                </div>
+                <div class="project-link">
+                    <span>visit website</span>
+                    <a href="#">www.votitude.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<footer>
+    <ul class="footer-links">
+        <li>
+        <a href="#">About Us</a></li>
+        <li>
+        <a href="#">Blog</a></li>
+          <li>
+        <a href="#">Contact Us</a></li>
+        <li>
+        <a href="#">Projects</a></li>
+    </ul>  
+    <div class="footer-team-logo">
+        <a href="#"><img src="static/images/favicon/Orabyte-logo-white.png" alt="Orabyte text logo minimal"></a>
+    </div>
+    <ul class="footer-social-media">
+        <li>
+            <a href="#"><img src="static/images/favicon/instagram-icon.png" alt="instagram logo"></a>
+        </li>
+        <li>
+            <a href="#"><img src="static/images/favicon/facebook-icon.png" alt="facebook logo"></a>
+        </li>
+        <li>
+          <a href="#"><img src="static/images/favicon/twitter-icon.png" alt="linkedin logo"></a>
+        </li>
+    </ul>  
+    <div class="footer-copyright">
+        © Orabytegh 2021
+    </div>
+</footer>  
+{% endblock %}

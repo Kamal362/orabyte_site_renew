@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Orabyte Team Site</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/about.css">
+<link rel="stylesheet" href="static/css/navbar-footer-sagestyles.css">
+{% endblock %}
+
+
+{% block body %}
+<nav>
+    <a href="{{ url_for('about') }}" class="logo"><img src="static/images/favicon/Orabyte-logo.png" alt="Orabyte logo minimal"></a>
+    <label for="toggle">
+        &#9776;
+    </label> 
+    <input type="checkbox" id="toggle">
+    <ul class="menu">
+        <li><a href="{{ url_for('homepage') }}">Home</a></li>
+        <li><a href="{{ url_for('project') }}">Projects</a></li>
+        <li><a href="{{ url_for('blogArticle') }}">Blog</a></li>            
+    </ul>
+</nav>
+
+<section class="container">
+    <section class="project">
+        <div class="project-wrap">
+            <div class="project-image">
+                <img src="static/images/team.png" alt="mockup">
+            </div>
+
+            <div class="project-detail">
+                <div class="project-detail-wrap">
+                    <div class="project-detail-title">
+                        Innovative Digital
+                        Tech Company in Ghana
+                    </div>
+                    <div class="project-detail-info">We work together as     a team to create beautiful digital and User satisfying products that solve problems innovatively in the simplest way possible to make 
+                        Africa and the world at large a better place.
+                        We also collaborate with startup companies to help create world class innovative projects.
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <a href="#">Collaborate with us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="team">
+        <h2 class="team-title">Our Team</h2>
+        <div class="team-flex">
+            <div class="team-member">
+                <div class="team-member-wrap">
+                    <div class="team-member-image"><img src="static/images/charlie.png" alt="Charles Peprah"></div> 
+                    <div class="team-member-name">Charles Kojo Peprah</div>
+                    <div class="team-member-role">Product Designer & Frontend Developer</div>
+                </div> 
+            </div>
+            <div class="team-member">
+                <div class="team-member-wrap">
+                    <div class="team-member-image"><img src="static/images/fred.png" alt="Fred Dunyo"></div> 
+                    <div class="team-member-name">Fred Klenam Dunyo</div>
+                    <div class="team-member-role">Backend Developer</div>
+                </div> 
+            </div>
+            <div class="team-member">
+                <div class="team-member-wrap">
+                    <div class="team-member-image"><img src="static/images/kamal.png" alt="Kamal"></div> 
+                    <div class="team-member-name">Issaw Kamaradin</div>
+                    <div class="team-member-role">Backend Developer & Security Expert</div>
+                </div> 
+            </div>
+            <div class="team-member">
+                <div class="team-member-wrap">
+                    <div class="team-member-image"><img src="static/images/einstein.png" alt="Emmanuel Forson"></div> 
+                    <div class="team-member-name">Emmanuel Forson</div>
+                    <div class="team-member-role">Frontend Developer & Marketing</div>
+                </div> 
+            </div>
+            <div class="team-member">
+                <div class="team-member-wrap">
+                    <div class="team-member-image"><img src="static/images/isaac.png" alt="Isaac Gamor"></div> 
+                    <div class="team-member-name">Isaac Gamor</div>
+                    <div class="team-member-role">Research Personnel & Fianance</div>
+                </div> 
+            </div>
+            <div class="team-member">
+                <div class="team-member-wrap">
+                    <div class="team-member-image"><img src="static/images/alfred.png" alt="Alfred Owusu Acheampng"></div> 
+                    <div class="team-member-name">Alfred Owusu Acheampng</div>
+                    <div class="team-member-role">Backend Developer</div>
+                </div> 
+            </div>
+            <div class="team-member">
+                <div class="team-member-wrap">
+                    <div class="team-member-image"><img src="static/images/anthony.png" alt="Anthony Bonney"></div> 
+                    <div class="team-member-name">Anthony Bonney</div>
+                    <div class="team-member-role">Research Personnel</div>
+                </div> 
+            </div>
+        </div>
+    </section> 
+</section> 
+
+<footer>
+    <ul class="footer-links">
+        <li>
+        <a href="#">About Us</a></li>
+        <li>
+        <a href="#">Blog</a></li>
+          <li>
+        <a href="#">Contact Us</a></li>
+        <li>
+        <a href="#">Projects</a></li>
+    </ul>  
+    <div class="footer-team-logo">
+        <a href="#"><img src="static/images/favicon/Orabyte-logo-white.png" alt="Orabyte text logo minimal"></a>
+    </div>
+    <ul class="footer-social-media">
+        <li>
+            <a href="#"><img src="static/images/favicon/instagram-icon.png" alt="instagram logo"></a>
+        </li>
+        <li>
+            <a href="#"><img src="static/images/favicon/facebook-icon.png" alt="facebook logo"></a>
+        </li>
+        <li>
+          <a href="#"><img src="static/images/favicon/twitter-icon.png" alt="linkedin logo"></a>
+        </li>
+    </ul>  
+    <div class="footer-copyright">
+        © Orabytegh 2021
+    </div>
+</footer> 
+{% endblock %}
+
